@@ -12,5 +12,7 @@ script:
       choco install make
       cp "C:\\ProgramData\\chocolatey\\bin\\gcc.exe" "C:\\ProgramData\\chocolatey\\bin\\cc.exe"
     fi
-  - make ./autogen.sh && ./configure --without-liquid && make
+  - ./autogen.sh
+  - ./configure --without-liquid
+  - make
 
